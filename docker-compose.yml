@@ -1,11 +1,11 @@
 version: "3.5"
 services:
     fuseki:
-        image: stain/jena-fuseki
-        container_name: st_fuseki
+        image: stain/jena-fuseki-ps
+        container_name: example_fuseki
         restart: always
         ports:
-            - "32768:3030"
+            - "32769:3030"
         volumes:
             - "./volumes/fuseki_data:/fuseki"
         environment:
